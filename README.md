@@ -31,5 +31,5 @@ Desventajas:
 
 
 
-Bibliografia consultada: 
+Bibliografia consultada: "Sitemas Operativos" de William Stanllings
 
