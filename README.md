@@ -25,8 +25,37 @@ En un sistema operativo existen tres formas en la que se pueden ejecutar proceso
 
 Ventajas:
 
+-Paralelismo real: En arquitectura de multinucleos, se podrian asignar una tarea para cada nucleo y asi podrian trabajar las tareas en
+simultaneo sin problemas. En arquitectura mononucleos,se podria tambien obtener concurrencia utilizando multiples procesadores. El sistema opretivo
+se encargar que los distintos procesos que se esten ejecutando, puedan colarborar entre si y comunicarse entre ellos.
+
+-Paralelismo virtual: Utiliza la tecnica de multiplexacion que permite que ejecucion de varios procesos en un unico procesador, de manera que parece
+que se estan ejecutando todos los procesos a la vez, aunque en el procesador solo de este ejecutando un proceso en cada instante de tiempo.
+Aunque haya solo un solo procesador esto no es niguna retrincion para que se puedan ejecutar programas concurrentes
+
+-Permiten compartir recursos fisicos y logicos del sistema
+
+-Permiten acelerar los calculos: divide las tareas en subtareas y las ejecuta en paralelo
+
+_ Modulalidad : Se puede construir un sistema modular, dividiendo las funciones del sistema en procesos separados
+
+
+
+
 
 Desventajas:
+-Condicion de carrera: Esto se da cuando uno o varios procesos quieren acceder a un mismo recurso compartido sin control.
+
+-Aplazamiento: Consiste en que uno o varios procesos no tenga suficiente uso del CPU o de otro recurso, para terminar su tarea
+
+-Condicion de espera circula: Esto ocurre cuando un proceso necesita de un recurso que esta siendo utilizado por otro y este otro necesite
+que el primero libre un recurso, creado asi una cola de espera
+
+-Condicion de espera ocupada: Cuando un proceso pide la utilizacion de un recurso que esta siendo utilizado por otro, consumiendo asi su tiempo 
+chequeando si el recuro solicitado fue liberado
+
+-Exclusion mutua: La condicion de exclusion mutua establece que solo un proceso puede acceder a la seccion critica ( variable, espacio de memoria, recurso
+compartido). Para evitar esto se utilizan alguna tecnica para evitar la entrar en la seccion como la implementacion de semaforos, monitores, mutex
 
 
 
