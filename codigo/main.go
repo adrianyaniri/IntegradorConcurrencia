@@ -3,7 +3,7 @@ en buffer implementacion en lenguaje go
 */
 /* ejemplo de patron productor consumidor */
 /* channels son equivalentes a los buffer */
-package IntegradorConcurrencia
+package codigo
 
 import "fmt"
 
